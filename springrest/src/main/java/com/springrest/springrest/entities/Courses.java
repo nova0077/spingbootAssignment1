@@ -1,7 +1,12 @@
 package com.springrest.springrest.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Courses {
 	
+	@Id
 	private long id;
 	private String title;
 	private String description;
@@ -15,7 +20,6 @@ public class Courses {
 
 	public Courses() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
